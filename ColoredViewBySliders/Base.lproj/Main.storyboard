@@ -80,12 +80,21 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-f6-FoF">
                                                 <rect key="frame" x="-2" y="0.0" width="228" height="31"/>
+                                                <connections>
+                                                    <action selector="redGreenBlueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="2ZM-9U-ajt"/>
+                                                </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Hh-Cm-BRc">
+                                            <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Hh-Cm-BRc">
                                                 <rect key="frame" x="-2" y="42" width="228" height="31"/>
+                                                <connections>
+                                                    <action selector="redGreenBlueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Akg-vA-VcI"/>
+                                                </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="li4-vN-gxg">
+                                            <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="li4-vN-gxg">
                                                 <rect key="frame" x="-2" y="84" width="228" height="31"/>
+                                                <connections>
+                                                    <action selector="redGreenBlueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="mYH-JS-QDX"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -106,6 +115,15 @@
                             <constraint firstItem="kHZ-pP-SGE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIA-JA-8yE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="B6H-XC-tnW" id="nzs-l4-aQV"/>
+                        <outlet property="blueSlider" destination="li4-vN-gxg" id="Hty-r5-IKX"/>
+                        <outlet property="coloredView" destination="kHZ-pP-SGE" id="JMV-eM-KJf"/>
+                        <outlet property="greenLabel" destination="kXe-91-MBZ" id="sCM-Gt-Grf"/>
+                        <outlet property="greenSlider" destination="0Hh-Cm-BRc" id="UFM-vA-S5J"/>
+                        <outlet property="redLabel" destination="d6E-nH-wAC" id="FW4-yH-FdR"/>
+                        <outlet property="redSlider" destination="xlp-f6-FoF" id="c5V-4b-ijy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
