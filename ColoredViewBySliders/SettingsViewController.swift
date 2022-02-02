@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
     
     @IBOutlet var coloredView: UIView!
     
@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
+    
+    @IBOutlet var redTextField: UITextField!
+    @IBOutlet var greenTextField: UITextField!
+    @IBOutlet var blueTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +40,13 @@ class ViewController: UIViewController {
         switch sender {
         case redSlider:
             redLabel.text = string(from: redSlider)
+            redTextField.text = string(from: redSlider)
         case greenSlider:
             greenLabel.text = string(from: greenSlider)
+            greenTextField.text = string(from: greenSlider)
         default:
             blueLabel.text = string(from: blueSlider)
+            blueTextField.text = string(from: blueSlider)
         }
     }
     
